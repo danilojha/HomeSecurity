@@ -17,12 +17,11 @@ msg.attach(image)
 
 gmail_user = 'email_to_send_from@gmail.com'
 gmail_pwd = 'im_not_telling_you_my_password'
-FROM = gmail_user # sendmail needs the from
+FROM = gmail_user 
 TO = 'email_to_send_to@gmail.com'
 
-# SMTP_SSL Example
 server_ssl = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-server_ssl.ehlo() # optional, called by login()
+server_ssl.ehlo() 
 server_ssl.login(gmail_user, gmail_pwd)
 server_ssl.sendmail(FROM, [TO], msg.as_string())
 server_ssl.close()
