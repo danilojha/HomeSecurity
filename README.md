@@ -2,12 +2,10 @@
 Items used: 
 
 - Intel Galileo Board 
-
 - Ultrasonic Range Finder
-
 - Webcam
-
 - SD card
+- My nerves trying to figure out the IP everytime it changed
 
 Although the Galileo Board comes preloaded with a base version of Linux, this project required booting a developer kit Linux image that allowed the use of OpenCV.
 
